@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Comment from "./Comment/Comment";
+import CommentList from "./Comment/CommentList";
 
 function App() {
+  const [comments, setComments] = useState([]);
+  // const comments = [
+  //   // { id: 1, text: "Comment 1" },
+  //   // { id: 2, text: "Comment 2" },
+  // ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Comment setComments={setComments} />
+      <CommentList allcomments={comments} />
+    </>
   );
 }
 
