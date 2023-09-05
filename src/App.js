@@ -5,7 +5,9 @@ import CommentList from "./Comment/CommentList";
 
 function App() {
   const [comments, setComments] = useState([]);
-
+  const handleLogin = () => {
+    console.log("I logged in here ")
+  }
   return (
     <>
       <p>There i added new Line </p>
@@ -15,6 +17,7 @@ function App() {
       </b>
       <Comment setComments={setComments} />
       <CommentList allcomments={comments} />
+      <button onClick={handleLogin}>Log Me</button>
     </>
   );
 }
