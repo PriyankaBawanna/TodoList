@@ -5,12 +5,14 @@ import CommentList from "./Comment/CommentList";
 
 function App() {
   const [comments, setComments] = useState([]);
-  // const comments = [
-  //   // { id: 1, text: "Comment 1" },
-  //   // { id: 2, text: "Comment 2" },
-  // ];
+
   return (
     <>
+      <p>There i added new Line </p>
+      <div> git Merge check Karna hai </div>
+      <b>interview clear karna hai
+
+      </b>
       <Comment setComments={setComments} />
       <CommentList allcomments={comments} />
     </>
