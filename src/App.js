@@ -11,6 +11,8 @@ function App() {
   // ];
   return (
     <>
+      <p>Hello User </p>
+      <div>are you ready</div>
       <Comment setComments={setComments} />
       <CommentList allcomments={comments} />
     </>
